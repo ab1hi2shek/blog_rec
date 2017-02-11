@@ -30,7 +30,7 @@ class PostsController < ApplicationController
 	end
 
 	def update
-		if @post.update project_params
+		if @post.update post_params
 			redirect_to @post, notice: "Post successfully updated!"
 		else
 			render 'edit'

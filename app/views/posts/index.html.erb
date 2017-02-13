@@ -3,7 +3,7 @@
 <%= submit_tag "Search" %>
 <% end %>
 
-<%= link_to "All Articles", new_post_path %>
+<p align="right"> <%= link_to "New Articles", new_post_path %> </p>
 
 <% @posts.each do |post| %>
 			<h3><a href="#"><%= link_to post.title, post %></a></h3>

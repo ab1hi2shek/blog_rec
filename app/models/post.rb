@@ -3,7 +3,6 @@ class Post < ActiveRecord::Base
 	friendly_id :title, use: :slugged
 
 	def self.search(search)
-		where("title LIKE ?", "%#{search}%") or
-		where("content LIKE ?", "%#{search}%")
+		where("title LIKE ?", "%#{search}%")
 	end
 end

@@ -1,5 +1,5 @@
-<%= @post.title %><br>
-<%= markdown @post.content %>
+<%= @post.title.html_safe %><br>
+<%= @post.content.html_safe %>
 
 <br> <br>
 

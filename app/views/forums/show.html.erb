@@ -1,0 +1,11 @@
+<%= @forum.title.html_safe %><br>
+<%= @forum.content.html_safe %>
+
+<br> <br>
+
+<%= link_to "Edit forum", edit_forum_path(@forum) %>
+<%= link_to "Delete forum", forum_path(@forum), method: :delete, data: { confirm: "Are you sure?" } %>
+
+<%= render 'disqus' %>
+
+<%= link_to "All Forums", forums_path %>
